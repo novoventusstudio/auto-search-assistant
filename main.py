@@ -4,12 +4,7 @@ import os
 import json
 import src.agent as agent
 
-config_path = f"{os.path.expanduser('~')}/.auto-search-assistant/config.json"
-
-try:
-    os.mkdir(f"{os.path.expanduser('~')}/.auto-search-assistant")
-except:
-    pass
+config_path = f"config.json"
 
 if not os.path.exists(config_path):
     config = {
