@@ -1,7 +1,7 @@
 [project]
-name = "xarecode"
+name = "auto-search-assiatant"
 version = "0.1.0"
-description = "Add your description here"
+description = "使用DeepAgents开发的搜索助手"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [

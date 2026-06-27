@@ -1,0 +1,1 @@
+uv run C:\Users\sonic\Documents\auto-search-assistant\.venv\Scripts\python.exe C:\Users\sonic\Documents\auto-search-assistant\main.py

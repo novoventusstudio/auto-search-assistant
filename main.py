@@ -4,7 +4,12 @@ import os
 import json
 import src.agent as agent
 
-config_path = "./config.json"
+config_path = f"{os.path.expanduser('~')}/.auto-search-assistant/config.json"
+
+try:
+    os.mkdir(f"{os.path.expanduser('~')}/.auto-search-assistant")
+except:
+    pass
 
 if not os.path.exists(config_path):
     config = {
@@ -59,7 +64,7 @@ if sys.platform == 'win32':
     def silence_windows_pipe_error(self):
         try: 
             old_del(self)
-        except (ValueError, ResourceWarning): 
+        except: 
             pass
     _ProactorBasePipeTransport.__del__ = silence_windows_pipe_error
 
